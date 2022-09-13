@@ -1,5 +1,5 @@
 #include<stdio.h>
-/*
+/**
   * main - Entry point
   *
   * puts -print declared char string to std output
