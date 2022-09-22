@@ -9,27 +9,15 @@ void print_rev(char *s)
 {
 	int i;
 
-	i = string_length(s) - 1;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		;
+	}
+	i--;
 	
-	while (i >= 0)
+	for (; i >= 0; i--)
 	{
 	_putchar(s[i]);
-	i--;
 	}
-	_putchar('\n');
-}
-/**
-* string_length - finds the length of a string.
-* Return: length of c
-* @pointer: pointer
-*/
-int string_length(char *pointer)
-{
-	int c = 0;
-
-	while (*(pointer + c) != '\0')
-	{
-	c++;
-	}
-	return (c);
+	_putchar(10);
 }
