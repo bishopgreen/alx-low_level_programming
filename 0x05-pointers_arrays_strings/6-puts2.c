@@ -6,26 +6,20 @@
 */
 void puts2(char *str)
 {
-	int i;
+	int counter = 0;
+	int i = 0;
 
-	for (i = 0; i < string_length(str); i += 2)
+	while (str[i])
+	{
+	counter++;
+	i++;
+	}
+	for (i = 0; i < counter; i++)
+	{
+	if (i % 2 == 0)
 	{
 	_putchar(str[i]);
 	}
-	_putchar('\n');
-}
-/**
-* string_length - finds the length of a string.
-* Return: length of c.
-* @pointer: pointer.
-*/
-int string_length(char *pointer)
-{
-	int c = 0;
-
-	while (*(pointer + c) != '\0')
-	{
-	c++;
 	}
-	return (c);
+	_putchar(10);
 }
