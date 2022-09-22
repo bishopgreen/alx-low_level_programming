@@ -20,8 +20,8 @@ void print_rev(char *s)
 }
 /**
 * string_length - finds the length of a string.
-* Return: length of c.
-* @pointer: pointer.
+* Return: length of c
+* @pointer: pointer
 */
 int string_length(char *pointer)
 {
