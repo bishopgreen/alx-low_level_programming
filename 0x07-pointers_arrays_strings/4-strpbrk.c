@@ -1,36 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 #define NULL 0
 /**
-* _strspn - function
-* @s: return num bytes of
-* @accept: bytes from
-* Description: function to get through length of prefix substring
-* Return: s
+* _strpbrk - function
+* @s: string to search in first  occur
+* @accept: string parameter set
+* Description: function that searches a string for any of a set of bytes.
+* Return: pointer to type s or null
 */
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int i, j, counter;
-
-	counter = 0;
-
-	if (*s == NULL || *accept == NULL)
-	return (0);
+	int i, j;
 
 	for (i = 0; s[i]; i++)
 	{
-		for (j = 0; accept[j]; j++)
-		{
+	for (j = 0; accept[j]; j++)
+	{
 		if (s[i] == accept[j])
 		{
-			counter++;
-			break;
-		}
-		else if (*(accept + j + 1) == '\0')
-		{
-		return (counter);
-		}
+		return (&s[i]);
 		}
 	}
-	return (counter);
+	}
+	return (NULL);
+return (0);
 }
