@@ -2,7 +2,6 @@
 /**
 * _sqrt_recursion - function
 * @n: integer to get square root of
-*
 * Description: function to find sqroot of given integer
 * Return: 0, return -1 if no square root.
 */
