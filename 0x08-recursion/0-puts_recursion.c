@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* is_palindrome - function
+* _puts_recursion - function for string
 * @s: string to check for palindrome
 *
 * Description: func to check if string is palindrome
