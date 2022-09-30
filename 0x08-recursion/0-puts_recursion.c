@@ -6,11 +6,13 @@
 * Description: func to check if string is palindrome
 * Return: 1 if palindrome, 0 if not
 */
-int is_palindrome(char *s)
+void _puts_recursion(char *s)
 {
-	if (*s)
+	if (*s == '\0')
 	{
-	return (0);
+	_putchar('\n');
+	return;
 	}
-	return (0);
+	_putchar(*s);
+	_puts_recursion(s + 1);
 }
