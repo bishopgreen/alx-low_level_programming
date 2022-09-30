@@ -7,11 +7,11 @@
 */
 int _sqrt_recursion(int n)
 {
-	int c = 0;
+	int square = 2;
 
-	if (c == n)
-	{
-	return (0);
-	}
-	return (0);
+	if (n < 0)
+	return (-1);
+	else if (n == 0 || n == 1)
+	return (n);
+	return (isqrt(n, square));
 }
