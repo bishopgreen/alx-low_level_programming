@@ -1,4 +1,5 @@
 #include "main.h"
+#include <studio.h>
 /**
 * _sqrt_recursion - function
 * @n: integer to get square root
@@ -7,14 +8,11 @@
 */
 int _sqrt_recursion(int n)
 {
-	int square = 2;
+	int c = 0;
 
-	if (n > 0)
+	if (n == c)
 	{
-		return (isqrt(n, square));
+	return (0);
 	}
-	else if (n <= 0 || n == 1)
-	{
-		return (n);
-	}
+	return (sqrt n);
 }
