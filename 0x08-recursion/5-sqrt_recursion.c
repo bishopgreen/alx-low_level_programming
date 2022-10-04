@@ -10,9 +10,9 @@ int _sqrt_recursion(int n)
 {
 	int c = 0;
 
-	if (n == c)
+	if (c == n)
 	{
-	return (0);
+		return (0);
 	}
-	return (sqrt n);
+	return (0);
 }
