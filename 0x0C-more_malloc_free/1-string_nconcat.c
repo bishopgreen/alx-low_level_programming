@@ -51,9 +51,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (new_str);
 }
 /**
-* string_length - finds the length of a string.
-* Return: length of c.
-* @pointer: pointer.
+* string_length - finds the length of a string
+* Return: length of c
+* @pointer: pointer
 */
 int string_length(char *pointer)
 {
