@@ -1,13 +1,37 @@
-#ifndef MAIN_H
-#define MAIN_H
+#include <stdio.h>
+#include "main.h"
 
-int _putchar(char c);
-unsigned int binary_to_uint(const char *b);
-void print_binary(unsigned long int n);
-int get_bit(unsigned long int n, unsigned int index);
-int set_bit(unsigned long int *n, unsigned int index);
-int clear_bit(unsigned long int *n, unsigned int index);
-unsigned int flip_bits(unsigned long int n, unsigned long int m);
-int get_endianness(void);
+/**
+* print_binary - Print out the binary representation of an unsigned long int
+* @n: The unsigned long int to print in binary
+*/
+void print_binary(unsigned long int n)
+{
+	unsigned long int revnum;
+	unsigned long int count;
 
-#endif
+	revnum = count = 0;
+	if (n == 0)
+		_putchar('0');
+	while (n > 0)
+	{
+		revnum = revnum << 1;
+		revnum += n & 1;
+		count++;
+		n = n >> 1;
+	}
+	while (revnum > 0)
+	{
+		_putchar((revnum & 1) + '0');
+		revnum = revnum >> 1;
+		count--;
+	}
+	if (count > 0)
+	{
+		while (count != 0)
+		{
+			_putchar('0');
+			count--;
+		}
+	}
+}
